@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First decent webpage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+        <style>
+            h1 {
+                color: #FFFF00 ;
+                font-family: Lobster;
+                font-size: 60px;
+                font-weight: 800;
+                transform: skewX(-15deg);
+        
+            }
+
+            h2 {
+                color: #FFFF00;
+            }
+
+            .standard-image {
+                width: 450px;
+                border-radius: 40px;
+            }
+
+            
+            .uniform-height {
+                height:300px;
+            }
+
+            .border-black {
+                border-color: black;
+                border-width: 5px;
+                border-style: solid;
+            }
+            
+            a:hover {
+                color:springgreen;
+            }
+
+            .sidebar {
+                float: right;
+                width: 35%;
+                text-align: justify;
+                top: 100px;
+                position:relative;
+            }
+
+            .left {
+                position: relative;
+                width: 60%;
+                left: 20px;
+                float: left;
+            
+            }
+
+            .box {
+                border: 3px black;
+                padding: 20px;
+                margin: auto;
+                width: 300px;
+                
+            }
+
+            .headfoot {
+                background: linear-gradient(70deg, #000099, #66FFFF);
+            }
+
+            .content {
+                background: url(https://www.designbolts.com/wp-content/uploads/2013/02/Golf-Shirt-Grey-Seamless-Pattern-For-Website-Background.jpg);
+                background-color:#8B88E2;
+            }
+ 
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="left headfoot">
+                <h1>EASY RECIPES</h1>
+            </div>
+            <div class="left content">
+                <ol>
+                    <li><a href=#american-pancakes>American pancakes</a></li>
+                    <li><a href=#korean-beef-bowl>Korean beef bowl</a></li>
+                    <li><a href=#chicken-taquitos>Chicken taquitos</a></li>
+                </ol>
+
+                <form action=/>
+                    <input type=text placeholder="Find a recipe">
+                    <button type=submit>Submit</button>
+                </form>
+
+                <h2 id=american-pancakes>1. American pancakes</h2>
+                <img class="standard-image uniform-height border-black" src=https://www.ndtv.com/cooks/images/pancakes.jpg
+                alt="Picture of American pancakes.">
+                <p>Good breakfast with maple syrup. <a target=1blank href=https://www.bbc.co.uk/food/recipes/fluffyamericanpancak_74828>Recipe</a> available here!</p>
+
+                <h2 id=korean-beef-bowl>2. Korean beef bowl</h2>
+                <img class="standard-image uniform-height border-black" src=https://s23209.pcdn.co/wp-content/uploads/2013/07/IMG_9111edit1.jpg
+                alt="Picture of Korean beef bowl.">
+                <p>Good source of iron. <a target=2blank href=https://damndelicious.net/2013/07/07/korean-beef-bowl>Recipe</a> available here!</p>
+
+                <h2 id=chicken-taquitos>3. Chicken taquitos</h2>
+                <img class="standard-image uniform-height border-black" src=https://www.familyfreshmeals.com/wp-content/uploads/2019/07/Easy-Chicken-Taquitos-Recipe-Family-Fresh-Meals.jpg
+                alt="Picture of Chicken taquitos.">
+                <p>Mexican style kitchen. <a target=3blank href=https://www.dinneratthezoo.com/chicken-taquitos-baked-or-fried>Recipe</a> available here!</p>
+            </div>
+            <div class=sidebar>
+                <h3><strong>SIDEBAR</strong></h3>
+                <P>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </P>
+            </div>
+        </div>
+        <div>
+            <div class=left><hr>
+                <form>
+                    <p><strong>What was your favorite recipe?</strong></p>
+                    <label for=american-pancakes>
+                        <input id=american-pancakes type=radio name=recipe value=american-pancakes>American pancakes
+                    </label>
+                    <label for=korean-beef-bowl>
+                        <input id=korean-beef-bowl type=radio name=recipe value=korean-beef-bowl>Korean beef bowl
+                    </label>
+                    <label for=chicken-taquitos>
+                        <input id=chicken-taquitos type=radio name=recipe value=chicken-taquitos>Chicken taquitos
+                    </label>
+
+                    <button type=submit>Submit</button>
+                </form>
+                <form>
+                    <p><strong>What recipes didn't you like?</strong></p>
+                    <label for=american-pancakes>
+                        <input id=american-pancakes type=checkbox name=dislike>American pancakes
+                    </label>
+                    <label for=korean-beef-bowl>
+                        <input id=korean-beef-bowl type=checkbox name=dislike>Korean beef bowl
+                    </label>
+                    <label for=chicken-taquitos>
+                        <input id=chicken-taquitos type=checkbox name=dislike>Chicken taquitos
+                    </label>
+                    <button type=submit>Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
